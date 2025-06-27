@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>PPMS – The Maintenance Hawkeye</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <div class="sidebar">
+    <h2>PPMS Dashboard</h2>
+    <ul>
+      <li><a href="#status">Equipment Status</a></li>
+      <li><a href="#alerts">Alerts</a></li>
+      <li><a href="#rul">RUL Forecast</a></li>
+      <li><a href="#heatrate">Heat Rate</a></li>
+    </ul>
+  </div>
+  <div class="main">
+    <header>
+      <h1>Welcome to PPMS – The Maintenance Hawkeye</h1>
+      <p>Real-time Predictive Maintenance Monitoring</p>
+    </header>
+    <section id="status">
+      <h2>Equipment Status</h2>
+      <div class="card-grid">
+        <div class="card green">
+          <h3>Boiler 3</h3>
+          <p>Health: 92%</p>
+        </div>
+        <div class="card yellow">
+          <h3>BFP Pump 1</h3>
+          <p>Health: 75%</p>
+        </div>
+        <div class="card red">
+          <h3>PA Fan 2</h3>
+          <p>Health: 45% – Immediate Attention Needed</p>
+        </div>
+      </div>
+    </section>
+    <section id="alerts">
+      <h2>Active Alerts</h2>
+      <ul class="alerts-list">
+        <li class="alert red">[Critical] PA Fan vibration exceeds threshold.</li>
+        <li class="alert yellow">[Warning] Boiler feedwater temp fluctuation detected.</li>
+        <li class="alert green">No new alerts.</li>
+      </ul>
+    </section>
+    <section id="rul">
+      <h2>Remaining Useful Life (RUL)</h2>
+      <table>
+        <tr>
+          <th>Equipment</th>
+          <th>Estimated RUL</th>
+          <th>Status</th>
+        </tr>
+        <tr>
+          <td>Boiler 3</td>
+          <td>220 days</td>
+          <td>Healthy</td>
+        </tr>
+        <tr>
+          <td>PA Fan 2</td>
+          <td>10 days</td>
+          <td>Critical</td>
+        </tr>
+        <tr>
+          <td>BFP Pump 1</td>
+          <td>35 days</td>
+          <td>Monitor</td>
+        </tr>
+      </table>
+    </section>
+    <section id="heatrate">
+      <h2>Heat Rate Efficiency</h2>
+      <p>Current Heat Rate: <strong>2435 kcal/kWh</strong></p>
+      <p>Target Range: 2300–2350 kcal/kWh</p>
+      <p>Recommendation: Review excess air controls and APH cleaning schedule.</p>
+    </section>
+    <footer>
+      <p>© 2024 PPMS – The Maintenance Hawkeye</p>
+    </footer>
+  </div>
+</body>
+</html>
